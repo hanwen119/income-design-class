@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>收入層次自我診斷｜幸福媽媽設計師</title>
+<meta name="description" content="兩個問題、三十秒，看懂妳現在在收入的第幾層，下一步往哪走。">
+<meta property="og:title" content="收入層次自我診斷｜兩個問題看懂妳在第幾層">
+<meta property="og:description" content="賣時間、賣專業、賣系統。三十秒診斷妳現在卡在哪一層，加 LINE 領取妳這一層的下一步清單。">
+<style>
+  :root{--bg:#F7F2E7;--card:#EFE7D5;--ink:#2E2A24;--sub:#8A847A;--body:#555049;--red:#C75B4A;--gold:#D9A33C;--green:#5E8C5F;--pink:#F3D9D2;--sand:#F4DDA6}
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{background:var(--bg);color:var(--ink);font-family:"PingFang TC","Noto Sans TC","Microsoft JhengHei",sans-serif;line-height:1.8}
+  .wrap{max-width:560px;margin:0 auto;padding:40px 24px 60px}
+  .brand{font-size:14px;font-weight:600;color:var(--sub);letter-spacing:1px}
+  .pill{display:inline-block;background:var(--red);color:#fff;font-size:15px;font-weight:700;letter-spacing:3px;padding:8px 18px;border-radius:99px;margin:28px 0 18px}
+  h1{font-size:34px;font-weight:800;letter-spacing:1px;line-height:1.35}
+  .lead{margin:16px 0 6px;font-size:16px;color:var(--body)}
+  h2{font-size:22px;font-weight:800;line-height:1.5;margin:6px 0 6px}
+  .hint{font-size:14.5px;color:var(--sub);margin-bottom:18px}
+  .step{font-size:14px;font-weight:700;color:var(--red);letter-spacing:2px;margin-top:28px}
+  .screen{display:none}
+  .screen.on{display:block;animation:in .35s ease}
+  @keyframes in{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+
+  .btn{display:block;width:100%;border:0;cursor:pointer;font-family:inherit;text-align:center;font-size:19px;font-weight:800;letter-spacing:2px;padding:18px;border-radius:14px;text-decoration:none;color:#fff;background:var(--green);box-shadow:0 4px 14px rgba(94,140,95,.35);margin:26px 0 8px}
+  .btn:active{transform:translateY(1px)}
+  .opt{display:block;width:100%;border:2px solid #E3D8C1;background:#fff;cursor:pointer;font-family:inherit;text-align:left;font-size:17px;font-weight:700;color:var(--ink);padding:16px 20px;border-radius:14px;margin:12px 0;line-height:1.6}
+  .opt small{display:block;font-size:14px;font-weight:500;color:var(--sub)}
+  .opt:hover,.opt:focus-visible{border-color:var(--red);outline:none}
+  .opt:active{transform:translateY(1px)}
+  .back{background:none;border:0;font-family:inherit;color:var(--sub);font-size:14px;cursor:pointer;margin-top:14px;padding:6px 0}
+  .note{text-align:center;font-size:13px;color:var(--sub)}
+
+  .pyr{margin:22px 0 8px;display:flex;flex-direction:column;align-items:center;gap:6px}
+  .pyr div{border-radius:12px;text-align:center;padding:10px 12px;font-size:15px;font-weight:700;color:var(--ink);opacity:.4;transition:opacity .3s}
+  .pyr .l3{width:62%;background:var(--red);color:#fff}
+  .pyr .l2{width:81%;background:var(--sand)}
+  .pyr .l1{width:100%;background:var(--pink)}
+  .pyr div small{display:block;font-size:12.5px;font-weight:500}
+  .pyr div.me{opacity:1;box-shadow:0 0 0 3px var(--ink)}
+  .pyr div.me::after{content:"妳在這裡";display:block;font-size:12px;letter-spacing:2px;margin-top:2px}
+
+  .card{background:var(--card);border-radius:18px;padding:22px 24px;margin:20px 0}
+  .card b.t{display:block;font-size:17px;margin-bottom:6px}
+  .card p{font-size:15.5px;color:var(--body)}
+  .next{background:#fff;border-left:5px solid var(--gold);border-radius:10px;padding:16px 20px;margin:16px 0}
+  .next b{display:block;font-size:16px;margin-bottom:4px}
+  .next p{font-size:15.5px;color:var(--body)}
+
+  .gift{background:#fff;border:2px dashed var(--green);border-radius:18px;padding:22px 22px 10px;margin:28px 0 10px;text-align:center}
+  .gift .k{display:inline-block;font-size:26px;font-weight:800;color:var(--green);letter-spacing:4px;background:#EEF4EC;border-radius:10px;padding:4px 18px;margin:8px 0 4px}
+  .gift p{font-size:15.5px;color:var(--body)}
+  .gift .btn{margin-top:18px}
+  .copy{background:none;border:1px solid #C9D9C8;border-radius:99px;font-family:inherit;font-size:13.5px;color:var(--green);padding:4px 14px;cursor:pointer;margin-left:6px;vertical-align:middle}
+  .links{display:flex;gap:10px;margin-top:18px}
+  .links button{flex:1;background:#fff;border:1px solid #E3D8C1;border-radius:12px;font-family:inherit;font-size:15px;font-weight:700;color:var(--body);padding:12px;cursor:pointer}
+
+  .bars{display:flex;gap:10px;margin:44px 0 14px}
+  .bars div{height:8px;border-radius:5px;flex:1}
+  .foot{font-size:13px;color:var(--sub);text-align:center}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="brand">幸福媽媽設計師 · Home Media Tutor</div>
+
+  <!-- 開場 -->
+  <section class="screen on" id="s-start">
+    <div class="pill">收入層次自我診斷</div>
+    <h1>妳現在，<br>在收入的第幾層？</h1>
+    <p class="lead">賣時間、賣專業、賣系統。<br>兩個問題、三十秒，看懂妳卡在哪一層，下一步往哪走。</p>
+    <div class="pyr">
+      <div class="l3" style="opacity:1">第三層　賣系統<small>收入不再綁著妳的工時</small></div>
+      <div class="l2" style="opacity:1">第二層　賣專業<small>賣的是解決方案，不是工時</small></div>
+      <div class="l1" style="opacity:1">第一層　賣時間<small>工作一停，收入就停</small></div>
+    </div>
+    <button class="btn" data-go="s-q1">開始診斷</button>
+    <p class="note">不用留資料 · 做完馬上看到結果</p>
+  </section>
+
+  <!-- 第一題 -->
+  <section class="screen" id="s-q1">
+    <div class="step">第 1 題 / 共 2 題</div>
+    <h2>同一份東西，妳賣過第二次嗎？</h2>
+    <p class="hint">第二次賣的時候，幾乎沒有再多花時間</p>
+    <button class="opt" data-level="3">有<small>賣第二次的時候，我幾乎不用再花時間</small></button>
+    <button class="opt" data-go="s-q2">沒有<small>每一次收入，都要我再做一次</small></button>
+    <button class="back" data-go="s-start">← 回上一步</button>
+  </section>
+
+  <!-- 第二題 -->
+  <section class="screen" id="s-q2">
+    <div class="step">第 2 題 / 共 2 題</div>
+    <h2>妳的收費，照時間算還是照結果算？</h2>
+    <p class="hint">想想妳最近一次收到的錢，是怎麼算出來的</p>
+    <button class="opt" data-level="1">照時間<small>時薪、日薪、月薪，或按件計酬做多少算多少</small></button>
+    <button class="opt" data-level="2">照結果<small>客人付錢買的是「問題被解決」，不是我花幾小時</small></button>
+    <button class="opt" data-level="0">我還沒開始收費<small>還在想、還在學，或剛準備起步</small></button>
+    <button class="back" data-go="s-q1">← 回上一題</button>
+  </section>
+
+  <!-- 結果 -->
+  <section class="screen" id="s-result">
+    <div class="pill" id="r-pill"></div>
+    <h1 id="r-title"></h1>
+    <p class="lead" id="r-lead"></p>
+    <div class="pyr">
+      <div class="l3" data-l="3">第三層　賣系統<small>收入不再綁著妳的工時</small></div>
+      <div class="l2" data-l="2">第二層　賣專業<small>賣的是解決方案，不是工時</small></div>
+      <div class="l1" data-l="1">第一層　賣時間<small>工作一停，收入就停</small></div>
+    </div>
+    <div class="card"><b class="t" id="r-now-t"></b><p id="r-now"></p></div>
+    <div class="next"><b id="r-next-t"></b><p id="r-next"></p></div>
+
+    <div class="gift">
+      <p>把妳這一層的<b>「下一步清單」</b>帶回家</p>
+      <p style="margin-top:6px">加 LINE 好友，回覆關鍵字</p>
+      <div><span class="k" id="r-key"></span><button class="copy" id="copy">複製</button></div>
+      <a class="btn" href="https://lin.ee/YG93HBB" target="_blank" rel="noopener">加 LINE 領取下一步清單</a>
+      <p class="note" style="margin-bottom:10px">加好友後，在聊天室輸入上面的關鍵字就會收到</p>
+    </div>
+
+    <div class="links">
+      <button data-go="s-start" id="again">重新診斷</button>
+      <button id="share">分享給朋友</button>
+    </div>
+  </section>
+
+  <div class="bars"><div style="background:var(--red)"></div><div style="background:var(--gold)"></div><div style="background:var(--green)"></div></div>
+  <div class="foot">© 涵雯｜幸福媽媽設計師 · portaly.cc/HomeMediaTutor</div>
+</div>
+
+<script>
+  var R = {
+    0: {pill:'妳的起點', title:'妳站在第一層的門口', lead:'還沒開始收費也沒關係，每個人都是從這裡出發的。',
+        l:1, nowT:'第一層　賣時間', now:'工作一停，收入就停。大多數人的第一筆收入都在這一層，它的任務是讓妳先賺到第一筆、確認有人願意付錢。',
+        nextT:'妳的下一步', next:'先把「我會做什麼」寫下來，找到第一個願意付錢的人。第一筆收入很小也沒關係，重點是踏出去。',
+        key:'起點'},
+    1: {pill:'第一層', title:'妳現在在：賣時間', lead:'妳很努力，而且妳的努力是真的有換到錢。只是工作一停，收入就停。',
+        l:1, nowT:'第一層　賣時間', now:'收入跟著工時走，想多賺就只能多做。帶著孩子的媽媽，時間永遠不夠，這一層很快就會碰到天花板。',
+        nextT:'第一層 → 第二層', next:'把「我會做什麼」改寫成「我能幫誰解決什麼問題」，完成第一次照結果收費的交付。',
+        key:'第一層'},
+    2: {pill:'第二層', title:'妳現在在：賣專業', lead:'妳已經不是在賣工時了，客人付錢買的是妳解決問題的能力。',
+        l:2, nowT:'第二層　賣專業', now:'賣的是解決方案，不是工時。但每一份收入，還是需要妳親自交付一次。',
+        nextT:'第二層 → 第三層', next:'把妳重複在解決的那個問題，做成能交付第二次的最小產品，先賣出去驗證一次。',
+        key:'第二層'},
+    3: {pill:'第三層', title:'妳現在在：賣系統', lead:'同一份東西能賣第二次，收入開始不再綁著妳的工時。',
+        l:3, nowT:'第三層　賣系統', now:'三種樣子：自己的產品、帶團隊、授權加盟。現在先不用選，先把手上這一個賣穩。',
+        nextT:'妳的下一步', next:'讓這份東西被更多對的人看見，穩定地一直賣下去。',
+        key:'第三層'}
+  };
+  var cur = null;
+  function $(id){return document.getElementById(id)}
+  function show(id){
+    document.querySelectorAll('.screen').forEach(function(s){s.classList.toggle('on', s.id===id)});
+    window.scrollTo({top:0, behavior:'smooth'});
+  }
+  function result(lv){
+    var r = R[lv]; cur = r;
+    $('r-pill').textContent = r.pill;
+    $('r-title').textContent = r.title;
+    $('r-lead').textContent = r.lead;
+    $('r-now-t').textContent = r.nowT;
+    $('r-now').textContent = r.now;
+    $('r-next-t').textContent = r.nextT;
+    $('r-next').textContent = r.next;
+    $('r-key').textContent = r.key;
+    $('copy').textContent = '複製';
+    document.querySelectorAll('#s-result .pyr div').forEach(function(d){
+      d.classList.toggle('me', +d.dataset.l === r.l);
+    });
+    show('s-result');
+  }
+  document.addEventListener('click', function(e){
+    var b = e.target.closest('button,[data-go]');
+    if(!b) return;
+    if(b.dataset.go){ show(b.dataset.go); return; }
+    if(b.dataset.level !== undefined){ result(+b.dataset.level); }
+  });
+  $('copy').addEventListener('click', function(){
+    var k = cur ? cur.key : '';
+    var done = function(){ $('copy').textContent = '已複製 ✓'; };
+    if(navigator.clipboard){ navigator.clipboard.writeText(k).then(done, function(){}); }
+  });
+  $('share').addEventListener('click', function(){
+    var url = location.href.split('#')[0];
+    var data = {title:'收入層次自我診斷', text:'兩個問題、三十秒，看懂妳現在在收入的第幾層', url:url};
+    if(navigator.share){ navigator.share(data).catch(function(){}); }
+    else if(navigator.clipboard){ navigator.clipboard.writeText(url).then(function(){ $('share').textContent = '連結已複製 ✓'; }); }
+  });
+</script>
+</body>
+</html>
