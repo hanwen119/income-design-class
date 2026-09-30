@@ -4,8 +4,8 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>收入層次自我診斷｜幸福媽媽設計師</title>
-<meta name="description" content="兩個問題、三十秒，看懂妳現在在收入的第幾層，下一步往哪走。">
-<meta property="og:title" content="收入層次自我診斷｜兩個問題看懂妳在第幾層">
+<meta name="description" content="三十秒，看懂妳現在在收入的第幾層，下一步往哪走。">
+<meta property="og:title" content="收入層次自我診斷｜三十秒看懂妳在第幾層">
 <meta property="og:description" content="賣時間、賣專業、賣系統。三十秒診斷妳現在卡在哪一層，加 LINE 領取妳這一層的下一步清單。">
 <style>
   :root{--bg:#F7F2E7;--card:#EFE7D5;--ink:#2E2A24;--sub:#8A847A;--body:#555049;--red:#C75B4A;--gold:#D9A33C;--green:#5E8C5F;--pink:#F3D9D2;--sand:#F4DDA6}
@@ -69,7 +69,7 @@
   <section class="screen on" id="s-start">
     <div class="pill">收入層次自我診斷</div>
     <h1>妳現在，<br>在收入的第幾層？</h1>
-    <p class="lead">賣時間、賣專業、賣系統。<br>兩個問題、三十秒，看懂妳卡在哪一層，下一步往哪走。</p>
+    <p class="lead">賣時間、賣專業、賣系統。<br>三十秒、最多三題，看懂妳卡在哪一層，下一步往哪走。</p>
     <div class="pyr">
       <div class="l3" style="opacity:1">第三層　賣系統<small>收入不再綁著妳的工時</small></div>
       <div class="l2" style="opacity:1">第二層　賣專業<small>賣的是解決方案，不是工時</small></div>
@@ -81,7 +81,7 @@
 
   <!-- 第一題 -->
   <section class="screen" id="s-q1">
-    <div class="step">第 1 題 / 共 2 題</div>
+    <div class="step">第 1 題</div>
     <h2>同一份東西，妳賣過第二次嗎？</h2>
     <p class="hint">第二次賣的時候，幾乎沒有再多花時間</p>
     <button class="opt" data-level="3">有<small>賣第二次的時候，我幾乎不用再花時間</small></button>
@@ -91,13 +91,24 @@
 
   <!-- 第二題 -->
   <section class="screen" id="s-q2">
-    <div class="step">第 2 題 / 共 2 題</div>
+    <div class="step">第 2 題</div>
     <h2>妳的收費，照時間算還是照結果算？</h2>
     <p class="hint">想想妳最近一次收到的錢，是怎麼算出來的</p>
     <button class="opt" data-level="1">照時間<small>時薪、日薪、月薪，做多久就領多少</small></button>
+    <button class="opt" data-go="s-q3">按件計酬<small>一件、一支、一篇多少錢</small></button>
     <button class="opt" data-level="2">照結果<small>客人付錢買的是「問題被解決」，不是我花幾小時</small></button>
     <button class="opt" data-level="0">我還沒開始收費<small>還在想、還在學，或剛準備起步</small></button>
     <button class="back" data-go="s-q1">← 回上一題</button>
+  </section>
+
+  <!-- 加碼題：按件計酬 -->
+  <section class="screen" id="s-q3">
+    <div class="step">最後一題</div>
+    <h2>妳一件的價格，是怎麼訂出來的？</h2>
+    <p class="hint">例如剪短影音一支 1,500、翻譯一個字 1 元，都是照件數算</p>
+    <button class="opt" data-level="1">照件數、字數、支數算<small>做越多件領越多，客人買的是「我做出來的東西」</small></button>
+    <button class="opt" data-level="2">照幫客人解決的問題算<small>價格跟做幾件無關，客人買的是「問題被解決」</small></button>
+    <button class="back" data-go="s-q2">← 回上一題</button>
   </section>
 
   <!-- 結果 -->
@@ -185,7 +196,7 @@
   });
   $('share').addEventListener('click', function(){
     var url = location.href.split('#')[0];
-    var data = {title:'收入層次自我診斷', text:'兩個問題、三十秒，看懂妳現在在收入的第幾層', url:url};
+    var data = {title:'收入層次自我診斷', text:'三十秒，看懂妳現在在收入的第幾層', url:url};
     if(navigator.share){ navigator.share(data).catch(function(){}); }
     else if(navigator.clipboard){ navigator.clipboard.writeText(url).then(function(){ $('share').textContent = '連結已複製 ✓'; }); }
   });
